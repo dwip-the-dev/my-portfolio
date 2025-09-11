@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWIP - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <div class="neon-text">
+                <span class="letter" data-letter="D">D</span>
+                <span class="letter" data-letter="W">W</span>
+                <span class="letter" data-letter="I">I</span>
+                <span class="letter" data-letter="P">P</span>
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">DWIP</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-section="home">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link" data-section="portfolio">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#blogs" class="nav-link" data-section="blogs">
+                        <i class="fas fa-blog"></i>
+                        <span>Blogs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#achievements" class="nav-link" data-section="achievements">
+                        <i class="fas fa-trophy"></i>
+                        <span>Achievements</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            <span class="animate-text">Hello, I'm</span>
+                            <span class="neon-name">DWIP</span>
+                        </h1>
+                        <p class="hero-subtitle animate-text">15-Year-Old Full Stack Developer & API Specialist</p>
+                        <p class="hero-description animate-text">
+                            4 years of programming experience creating real-life applications with actual functions and cool designs.
+                            Started with HTML, CSS, JavaScript (2021-2022), mastered Python (2023-2025).
+                            29+ projects completed, countless side projects, and 50+ blog articles published.
+                        </p>
+                        <div class="hero-buttons animate-text">
+                            <button class="btn-primary" onclick="downloadPortfolio()">
+                                <i class="fas fa-download"></i>
+                                Download Portfolio
+                            </button>
+                            <button class="btn-secondary" onclick="scrollToSection('contact')">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="floating-elements">
+                            <div class="floating-circle"></div>
+                            <div class="floating-square"></div>
+                            <div class="floating-triangle"></div>
+                        </div>
+                        <div class="code-animation">
+                            <div class="code-line">
+                                <span class="code-keyword">const</span>
+                                <span class="code-variable">developer</span>
+                                <span class="code-operator">=</span>
+                                <span class="code-string">"DWIP"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-keyword">if</span>
+                                <span class="code-bracket">(</span>
+                                <span class="code-variable">passionate</span>
+                                <span class="code-bracket">)</span>
+                                <span class="code-bracket">{</span>
+                            </div>
+                            <div class="code-line code-indent">
+                                <span class="code-function">createAmazingThings</span>
+                                <span class="code-bracket">()</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-bracket">}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-indicator">
+                    <div class="scroll-arrow">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My Portfolio</h2>
+                    <p class="section-subtitle">Showcasing my latest projects and creative work</p>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item" data-category="web">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>Modern React-based e-commerce solution with advanced features</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="mobile">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Task Management App</h3>
+                            <p>Cross-platform mobile application for productivity enhancement</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Redux</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Live Demo
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fab fa-github"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" data-category="design">
+                        <div class="portfolio-image">
+                            <div class="project-placeholder">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Brand Identity System</h3>
+                            <p>Complete brand redesign with modern visual identity</p>
+                            <div class="portfolio-tags">
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Branding</span>
+                                <span class="tag">Figma</span>
+                            </div>
+                            <div class="portfolio-links">
+                                <a href="#" class="portfolio-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    View Case Study
+                                </a>
+                                <a href="#" class="portfolio-link">
+                                    <i class="fab fa-behance"></i>
+                                    Behance
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs" class="section">
+            <div class="parallax-bg" data-speed="0.5"></div>
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Latest Blogs</h2>
+                    <p class="section-subtitle">Dynamic insights from my development journey</p>
+                    <div class="blog-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="api">API</button>
+                        <button class="filter-btn" data-filter="web">Web Dev</button>
+                        <button class="filter-btn" data-filter="python">Python</button>
+                        <button class="filter-btn" data-filter="tutorial">Tutorial</button>
+                    </div>
+                </div>
+                <div class="blog-grid" id="blogGrid">
+                    <!-- Dynamic blogs will be loaded here -->
+                </div>
+                <div class="blog-loading" id="blogLoading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading latest blogs...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Achievements</h2>
+                    <p class="section-subtitle">Milestones and recognitions in my journey</p>
+                </div>
+                <div class="achievements-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2025</div>
+                            <h3>39+ Projects Milestone</h3>
+                            <p>Successfully completed 29+ web development projects with real-world functionality and countless side projects</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <h3>Cyber Olympiad - 3rd Position</h3>
+                            <p>Achieved 3rd position in Cyber Olympiad 2023 competition demonstrating programming excellence</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023-2025</div>
+                            <h3>Python Mastery</h3>
+                            <p>Advanced Python programming with API integrations, MySQL databases, and backend development</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021-2022</div>
+                            <h3>Web Development Foundation</h3>
+                            <p>Learned HTML, CSS, JavaScript fundamentals at age 12-13 with countless side projects</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021</div>
+                            <h3>Programming Journey Begins</h3>
+                            <p>Started coding at age 12 with a passion for creating real-life applications with actual functions</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="stat-number">39+</div>
+                        <div class="stat-label">Personal Projects Completed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Blog Articles</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <div class="stat-number">16</div>
+                        <div class="stat-label">Years Old</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <p class="section-subtitle">Let's discuss your next project or collaboration</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Email</h4>
+                                <p>dwipbiswas@yahoo.com</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Phone</h4>
+                                <p>+918629986990</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fab fa-telegram"></i>
+                            </div>
+                            <div class="info-details">
+                                <h4>Telegram</h4>
+                                <p>t.me/dwip_thedev</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://t.me/dwip_thedev" class="social-link" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                            <a href="mailto:dwipbiswas@yahoo.com" class="social-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="tel:+918629986990" class="social-link">
+                                <i class="fas fa-phone"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="14b624e5-4930-49e4-a235-9638bb01aaea">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">
+                                <span class="btn-text">Send Message</span>
+                                <span class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                    Sending...
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Success/Error Messages -->
+    <div id="messageToast" class="message-toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
