@@ -214,6 +214,7 @@ body {
 
 /* Navigation */
 .navbar {
+  ext-decoration: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -226,6 +227,7 @@ body {
 }
 
 .nav-container {
+  ext-decoration: none;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-lg);
@@ -236,6 +238,7 @@ body {
 }
 
 .nav-logo {
+  ext-decoration: none;
   font-family: var(--font-primary);
   font-size: 1.5rem;
   font-weight: 900;
