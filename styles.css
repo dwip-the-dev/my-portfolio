@@ -256,7 +256,7 @@ body {
   display: flex;
   align-items: center;
   gap: var(--spacing-xs);
-  text-decoration: none;
+  text-decoration: none; /* Add this line */
   color: hsl(var(--text-secondary));
   font-weight: 500;
   padding: var(--spacing-sm) var(--spacing-md);
